@@ -24,7 +24,7 @@ const ShowCards: React.FC<ShowCardsProps> = ({
   handleLikes,
   handleDisLike,
 }) => {
-  return data.length > 0 ? (
+  return data?.length > 0 ? (
     data?.map((item: any) => {
       const { id, img_src, camera, earth_date, rover } = item;
       const likeStatus =
